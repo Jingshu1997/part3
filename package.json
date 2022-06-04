@@ -1,6 +1,6 @@
 {
-  "name": "part3",
-  "version": "0.1.0",
+  "name": "backend",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -41,5 +41,17 @@
   "devDependencies": {
     "json-server": "^0.17.0",
     "nodemon": "^2.0.16"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jingshu1997/part3.git"
+  },
+  "author": "Jingshu ZHANG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jingshu1997/part3/issues"
+  },
+  "homepage": "https://github.com/Jingshu1997/part3#readme"
 }
