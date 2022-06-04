@@ -14,6 +14,10 @@ module.exports = {
         'error',
         2
       ],
+      "indent": [
+        "error",
+        2
+    ],
       'linebreak-style': [
         'error',
         'windows'
