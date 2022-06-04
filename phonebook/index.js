@@ -49,13 +49,7 @@ app.get('/api/persons', (request, response,next) => {
 })
 
 app.get('/api/persons/:id', (request, response,next) => {
-  /*const id = Number(request.params.id)
-    const person = persons.find(person => person.id === id)
-    if (person) {
-      response.json(person)
-    } else {
-      response.status(404).end()
-  }*/
+
   Person.findById(request.params.id)
     .then(person => {
       if(person) {
@@ -68,9 +62,10 @@ app.get('/api/persons/:id', (request, response,next) => {
 })
 
 app.delete('/api/persons/:id', (request, response,next) => {
-  /* const id = Number(request.params.id)
-  persons = persons.filter(person => person.id !== id)
-  response.status(204).end()*/
+
+
+
+
   Person.findByIdAndRemove(request.params.id)
     .then(() => {
       response.status(204).end()
@@ -105,7 +100,6 @@ const errorHandler = (error, request, response, next) => {
   }
   next(error)
 }
-// this has to be the last loaded middleware.
 app.use(errorHandler)
 
 const PORT=process.env.PORT
